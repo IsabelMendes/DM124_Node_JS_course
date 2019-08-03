@@ -1,4 +1,4 @@
-const timer = 3000; //a second
+const timer = 2000; //a second
 const task = () => console.log('Any operation');
 
 setTimeout(task, timer);
