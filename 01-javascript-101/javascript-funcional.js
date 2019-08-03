@@ -1,12 +1,17 @@
 const names = [
-    'Doralice',
-    'Hanna',
-    'Clotilde'
+    'Doralice Fedô',
+    'Hanna Preguiça',
+    'Clotilde Louca'
 ];
 
 const print =name => console.log(name);
+const lastNameFirst = name => {
+    const [firstName, lastName] = name.split(" ");
+    return `${lastName}, ${firstName}`;
+}
 
 names
-.sort()
-.reverse()
-.forEach(print);
+    .map(lastNameFirst)
+    .sort()
+    .reverse()
+    .forEach(print);
