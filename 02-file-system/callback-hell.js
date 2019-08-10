@@ -1,9 +1,12 @@
 const fs = require('fs');
 
-const filename = 'my-file.txt';
+const fileName = 'my-file.txt';
 
-fs.readFile('my-file.txt', 'utf-8', (error, data)=>{
+fs.readFile(fileName, 'utf-8', (error, data)=>{
     if(error) throw error;
     //console.log(data);
-    fs.writeFile
+
+    fs.writeFile(fileName, data + '\nCallback Hell',(error) => {
+        console.log("it's worked");
+    })
 })
