@@ -1,7 +1,3 @@
-node.js
+Node.js
 JavaScript
-Rest API
-
-Callback Hell
-Callback Hell
-Callback Hell
+REST APIs
